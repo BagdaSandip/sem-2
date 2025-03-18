@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>First Page</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(245, 245, 245);
+        margin: 0;
+        padding: 0;
+        animation: fadeIn 1.5s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      ul {
+        padding: 0;
+        margin: 0;
+        background-color: rgb(51, 51, 51);
+        text-align: center;
+        position: relative;
+        animation: slideDown 1s ease-in-out;
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+
+      ul li {
+        display: inline;
+        padding: 15px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 14px 20px;
+        display: inline-block;
+        transition: background-color 0.3s ease;
+      }
+
+      ul li a:hover {
+        background-color: rgb(87, 87, 87);
+        border-radius: 5px;
+      }
+
+      form {
+        background-color: white;
+        max-width: 500px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out forwards;
+      }
+
+      input,
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid rgb(204, 204, 204);
+        border-radius: 5px;
+      }
+
+      textarea {
+        resize: none;
+      }
+
+      input[type="radio"],
+      input[type="checkbox"] {
+        width: auto;
+        margin-right: 5px;
+      }
+
+      input[type="submit"],
+      input[type="reset"] {
+        background-color: rgb(51, 51, 51);
+        color: white;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        width: 48%;
+        transition: transform 0.2s ease-in-out;
+      }
+
+      input[type="submit"]:hover,
+      input[type="reset"]:hover {
+        background-color: rgb(87, 87, 87);
+        transform: scale(1.05);
+      }
+
+       h1,h2 {
+        text-align: center;
+        color: rgb(51, 51, 51);
+        opacity: 0;
+        animation: fadeIn 2s ease-in-out forwards;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      @media (max-width: 600px) {
+        ul li {
+          display: block;
+          padding: 10px;
+        }
+
+        ul li a {
+          display: block;
+          padding: 10px;
+        }
+
+        form {
+          width: 90%;
+        }
+
+        body {
+          background-color: aqua;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li><a href="Homepage.html">Home</a></li>
+      <li><a href="Culturepage.html">Culture</a></li>
+      <li><a href="Landmarkpage.html">Landmark</a></li>
+      <li><a href="CuisinePage.html">Cuisine</a></li>
+      <li><a href="Contactus.html">Contact Us</a></li>
+    </ul>
+    <h2>Contact Us</h2>
+    <p>
+      Please fill out the form below for any inquiries or to register as a
+      student
+    </p>
+    <h1>Student Registration Form</h1>
+    <form>
+      <label>First Name:</label>
+      <input type="text" placeholder="Enter Your First Name" />
+
+      <label>Password:</label>
+      <input type="password" />
+
+      <label>Gender:</label>
+      <input type="radio" name="Gender" required />Male
+      <input type="radio" name="Gender" required />Female
+
+      <label>Subscribe To Newsletter:</label>
+      <input type="checkbox" />
+
+      <label>State:</label>
+      <select>
+        <option value="">Select your state</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="Madhyapradesh">Madhyapradesh</option>
+        <option value="Aasam">Aasam</option>
+        <option value="Bihar">Bihar</option>
+        <option value="Himachal pradesh">Himachal pradesh</option>
+      </select>
+
+      <label>Upload Resume:</label>
+      <input type="file" />
+
+      <label>Address:</label>
+      <textarea
+        placeholder="Enter your full address"
+        cols="30"
+        rows="6"
+      ></textarea>
+
+      <label>Date of Birth:</label>
+      <input type="date" />
+
+      <label>Preferred Interview Time:</label>
+      <input type="time" />
+
+      <label>Marks:</label>
+      <input type="number" />
+
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+
+      <h2>More Information</h2>
+      <p>Explore government job opportunities on the official OJAS website:</p>
+    </form>
+  </body>
+</html>

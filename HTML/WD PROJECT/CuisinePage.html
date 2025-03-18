@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cuisine</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(240, 240, 240);
+        color: rgb(20, 80, 100);
+        text-align: center;
+      }
+
+      nav {
+        background-color: rgb(51, 51, 51);
+        padding: 10px 0;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      ul li {
+        padding: 10px 20px;
+      }
+
+      ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background 0.3s, transform 0.2s;
+      }
+
+      ul li a:hover {
+        background-color: rgb(87, 87, 87);
+        transform: scale(1.1);
+      }
+
+      h2 {
+        color: rgb(255, 102, 0);
+        border-bottom: 3px solid rgb(255, 102, 0);
+        display: inline-block;
+        padding-bottom: 5px;
+        margin-top: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 800px;
+        margin: 10px auto;
+      }
+
+      ul.food-list {
+        list-style-type: square;
+        text-align: left;
+        max-width: 600px;
+        margin: 0 auto 20px;
+      }
+
+      figure {
+        margin: 20px auto;
+      }
+
+      img {
+        width: 80%;
+        max-width: 500px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s, box-shadow 0.3s;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+        transition: 0.5s ease-in-out;
+      }
+
+      blockquote {
+        font-style: italic;
+        color: rgb(100, 100, 100);
+      }
+
+      footer {
+        background-color: rgb(255, 102, 0);
+        color: white;
+        padding: 15px;
+        margin-top: 20px;
+      }
+
+      footer a {
+        color: white;
+        text-decoration: none;
+      }
+
+      footer a:hover {
+        text-decoration: underline;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      h2, p, ul.food-list, figure, blockquote {
+        animation: fadeIn 1s ease-in-out;
+      }
+
+      @media (max-width: 768px) {
+        ul {
+          flex-direction: column;
+          text-align: center;
+        }
+        ul li {
+          padding: 5px 0;
+        }
+        img {
+          width: 95%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="Culturepage.html">Culture</a></li>
+        <li><a href="Landmarkpage.html">Landmark</a></li>
+        <li><a href="CuisinePage.html">Cuisine</a></li>
+        <li><a href="Contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <h2>Popular Indian Dishes</h2>
+    <p>Explore the flavors of India through its diverse and rich culinary tradition.</p>
+
+    <h2>North Indian Cuisine</h2>
+    <p>Rich, aromatic, and flavorful dishes often cooked with ghee and spices:</p>
+    <ul class="food-list">
+      <li><b>Biryani:</b> A fragrant rice dish with spices and meat or vegetables.</li>
+      <li><b>Butter Chicken:</b> A creamy tomato-based curry.</li>
+      <li><b>Paneer Tikka:</b> Marinated paneer grilled to perfection.</li>
+    </ul>
+    <figure><img src="biryani.jpg" alt="Biryani" /></figure>
+
+    <h2>South Indian Cuisine</h2>
+    <p>Known for its blend of spice and tangy flavors:</p>
+    <ul class="food-list">
+      <li><b>Masala Dosa:</b> A crispy rice crepe stuffed with spicy potato.</li>
+      <li><b>Idli and Sambhar:</b> Soft rice cakes with tangy lentil stew.</li>
+      <li><b>Chettinad Chicken:</b> A fiery spiced chicken dish.</li>
+    </ul>
+    <figure><img src="dosa.jpg" alt="Masala Dosa" /></figure>
+    <blockquote>South Indian favorite: Masala Dosa</blockquote>
+
+    <h2>Sweet Delights</h2>
+    <p>No Indian meal is complete without delicious desserts:</p>
+    <ul class="food-list">
+      <li><b>Gulab Jamun:</b> Fried milk solids in sugar syrup.</li>
+      <li><b>Rasgulla:</b> Soft cheese balls in light sugar syrup.</li>
+      <li><b>Payasam:</b> A South Indian dessert with milk, rice, and jaggery.</li>
+    </ul>
+    <figure><img src="gulab_jamun.jpg" alt="Gulab Jamun" /></figure>
+    <blockquote>Irresistible Gulab Jamun</blockquote>
+
+    <footer>
+      <p>2025 &copy; Incredible India Project</p>
+      <p>Contact us at <a href="mailto:info@incredibleindia.com">info@incredibleindia.com</a></p>
+    </footer>
+  </body>
+</html>
